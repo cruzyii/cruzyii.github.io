@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbarContainer">
+        <nav>
+        <img src="./images/image.png" alt="lemon logo" height="50px">
+        CITRUM
+        <div class="options">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">LOCATIONS</a>
+            <a href="">CONTACTS</a>
+            <button data-popup-target="#popup" class="grayBtn">SIGN UP</button>
+        </div>
+        </nav>
+    </header>
+
+    <div class="bannerContainer">
+        <div class="banner">
+            <div class="leftBa  nner">
+                <h1 class="bannerText" id="headFresh">STAY FRESH</h1>
+                <h1 class="bannerText" id="headWith">WITH</h1><h1 class="bannerText" id="headLEM">LEMONS</h1>
+            </div>
+        <div class="bannerRight">
+            <img src="./images/Cartoon.png" alt="Cartoon drawing of a lemon">
+        </div>
+    </div>
+    </div>
+    <div class="seperator"></div>
+
+    <div class="infoBar">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>fruit-citrus</title><path d="M9 15.9C6.9 15.7 5.1 14.9 4 13.6C3.2 13.6 2.4 13.1 2.1 12.3C1.8 11.5 2.1 10.7 2.8 10.2C2.9 7.2 5.6 4.1 9.7 2.7C13.8 1.3 18 2.1 20 4.4C20.8 4.4 21.6 4.9 21.9 5.7C22.2 6.5 21.9 7.3 21.2 7.8C21.2 8.6 21 9.4 20.6 10.2C19.4 9.5 18 9 16.5 9C12.6 9 9.3 12 9 15.9M22 16.5C22 19.5 19.5 22 16.5 22S11 19.5 11 16.5 13.5 11 16.5 11 22 13.5 22 16.5M13.3 18L15.6 16.5L13.3 15C13.1 15.5 13 16 13 16.5S13.1 17.5 13.3 18M16 17.4L13.9 18.8C14.4 19.4 15.2 19.8 16 20V17.4M16 13.1C15.2 13.2 14.4 13.6 13.9 14.3L16 15.7V13.1M17 15.6L19.1 14.2C18.6 13.6 17.8 13.2 17 13V15.6M19.1 18.8L17 17.4V19.9C17.8 19.8 18.6 19.4 19.1 18.8M20 16.5C20 16 19.9 15.5 19.7 15L17.4 16.5L19.7 18C19.9 17.5 20 17 20 16.5Z" /></svg>
+            <h2>LEMONS</h2>
+        </div>
+        <div id="TIPS">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>water-check</title><path d="M21.75 16.25L17 21L14.25 18L15.41 16.84L17 18.43L20.59 14.84L21.75 16.25M17.62 12C16.31 8.1 12 3.25 12 3.25S6 10 6 14C6 17.31 8.69 20 12 20H12.34C12.12 19.36 12 18.7 12 18C12 14.82 14.5 12.22 17.62 12Z" /></svg>
+            <h2>TIPS</h2>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>book-open-page-variant</title><path d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" /></svg>
+            <h2>RECIPES</h2>
+        </div>  
+    </div>
+    <main>
+        <div class="popup" id="popup">
+            <div class="close-container">
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <h2 id="heading">Sign up</h2>
+            <div id="popup-container">
+                <input id="name" class="form" placeholder="name">
+                <input id="email" class="form" placeholder="email">
+                <div id="checkbox-container" class="form">
+                    <input type="checkbox" id="checkbox" class="form">
+                    <label for="checkbox" class="form">I agree to the terms & conditions</label>
+                </div>
+                <div>
+                    <button class="submit" id="submit">Submit</button>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="left-column">
+            <img src="./images/New Project.png">
+        </div>
+
+        <div class="right-column">
+            <div class="textBox1">
+                <div id="line"></div>
+                <h2>HOW WE STARTED MAKING LEMONADE</h2>
+            </div>
+            <div class="hidden">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button data-popup-target="#popup" class="grayBtn">SIGN UP</button>
+            </div>
+
+        </div>
+
+
+            
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-column">
+                <h2>READY TO SQUEEZE <span id="white">SOME</span> LEMONS?</h2>
+                <div class="svgDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email-alert</title><path d="M18 8L10 13L2 8V6L10 11L18 6M18 4H2C.9 4 0 4.9 0 6V18C0 19.1 .9 20 2 20H18C19.1 20 20 19.1 20 18V6C20 4.9 19.1 4 18 4M24 7H22V13H24V7M24 15H22V17H24V15Z" /></svg>
+                    <p>citrum@citrum.ctrm</p>
+                </div>
+            </div>
+
+            <div class="right-column" id="rightC">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>google</title><path d="M21.35,11.1H12.18V13.83H18.69C18.36,17.64 15.19,19.27 12.19,19.27C8.36,19.27 5,16.25 5,12C5,7.9 8.2,4.73 12.2,4.73C15.29,4.73 17.1,6.7 17.1,6.7L19,4.72C19,4.72 16.56,2 12.1,2C6.42,2 2.03,6.8 2.03,12C2.03,17.05 6.16,22 12.25,22C17.6,22 21.5,18.33 21.5,12.91C21.5,11.76 21.35,11.1 21.35,11.1V11.1Z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>wikipedia</title><path d="M14.97,18.95L12.41,12.92C11.39,14.91 10.27,17 9.31,18.95C9.3,18.96 8.84,18.95 8.84,18.95C7.37,15.5 5.85,12.1 4.37,8.68C4.03,7.84 2.83,6.5 2,6.5C2,6.4 2,6.18 2,6.05H7.06V6.5C6.46,6.5 5.44,6.9 5.7,7.55C6.42,9.09 8.94,15.06 9.63,16.58C10.1,15.64 11.43,13.16 12,12.11C11.55,11.23 10.13,7.93 9.71,7.11C9.39,6.57 8.58,6.5 7.96,6.5C7.96,6.35 7.97,6.25 7.96,6.06L12.42,6.07V6.47C11.81,6.5 11.24,6.71 11.5,7.29C12.1,8.53 12.45,9.42 13,10.57C13.17,10.23 14.07,8.38 14.5,7.41C14.76,6.76 14.37,6.5 13.29,6.5C13.3,6.38 13.3,6.17 13.3,6.07C14.69,6.06 16.78,6.06 17.15,6.05V6.47C16.44,6.5 15.71,6.88 15.33,7.46L13.5,11.3C13.68,11.81 15.46,15.76 15.65,16.2L19.5,7.37C19.2,6.65 18.34,6.5 18,6.5C18,6.37 18,6.2 18,6.05L22,6.08V6.1L22,6.5C21.12,6.5 20.57,7 20.25,7.75C19.45,9.54 17,15.24 15.4,18.95C15.4,18.95 14.97,18.95 14.97,18.95Z" /></svg>
+                </div>
+               
+                <div class="terms">
+                    <a href="">Privacy policy</a>
+                    <a href="">Terms & conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="overlay" ></div>
+
+    <script defer src="app.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
