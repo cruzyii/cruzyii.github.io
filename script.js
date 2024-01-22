@@ -31,14 +31,21 @@ function closePopup(popup){
 
 let username;
 let checkBox = document.getElementById("checkbox");
+let welcomeHeading = document.getElementById("headingWelcome");
+
 
 document.getElementById("submit").onclick = function(){
     if(checkBox.checked == true){
         username = document.getElementById("name").value;
-        console.log(username);
 
-        closePopup(popup)
-
+        if(document.getElementById('name').value == ""){
+            alert("Enter your name!");
+        }
+        else{
+            closePopup(popup)
+            welcomeHeading.innerText  = "Welcome, " + username;
+            openPopup(popupWelcome)
+        }
     }
 }
 
