@@ -55,8 +55,37 @@ nav img {
   padding-right: 10px;
 }
 
+nav .dropdown li {
+  display: block;
+  font-size: 32px;
+}
+
+nav .dropdown {
+  transition: all .5s;
+  width: 100%;
+  background-color: #252525;
+  position: absolute;
+  z-index: 1;
+  opacity: 0%;
+  padding: 0;
+}
+
+nav ul li:hover ul.dropdown {
+  opacity: 100%;
+}
+
 nav .options {
   margin-left: auto;
+}
+
+nav .options ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav .options ul li {
+  display: inline-block;
+  position: relative;
 }
 
 nav .options a {

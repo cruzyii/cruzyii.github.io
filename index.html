@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Citrum</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,21 @@
         <img src="./images/image.png" alt="lemon logo" height="50px">
         CITRUM
         <div class="options">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">LOCATIONS</a>
-            <a href="">CONTACTS</a>
-            <button data-popup-target="#popup" class="grayBtn">SIGN UP</button>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">LOCATIONS</a></li>
+                <li>
+                    <a href="" id="investing">INVESTING</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Our partners</a></li>
+                        <li><a href="#">Establishing</a></li>
+                        <li><a href="#">Finances</a></li>
+                        <li><a href="#">Why us?</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><button data-popup-target="#popup" class="grayBtn">SIGN UP</button></li>
+            </ul>
         </div>
         </nav>
     </header>
@@ -100,13 +110,7 @@
             </div>
 
         </div>
-
-
-            
-
-
     </main>
-
 
     <footer>
         <div class="footer-container">
@@ -135,7 +139,6 @@
 
     <div id="overlay" ></div>
 
-    <script defer src="app.js"></script>
     <script defer src="script.js"></script>
 </body>
 </html>
